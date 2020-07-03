@@ -1,8 +1,8 @@
 import OVIntegration
 import json
 
-with open('PasswordFile.json', "rb") as PFile:
-    passwordData = json.loads(PFile.read().decode('utf-8'))
+with open('PasswordFile.json', "rb") as SFile:
+    passwordData = json.loads(SFile.read().decode('utf-8'))
 
 user = passwordData["UserName"]
 password = passwordData["Password"]
