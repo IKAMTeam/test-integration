@@ -1,7 +1,7 @@
 import OVIntegration
 import json
 
-with open('PasswordFile.json', "rb") as SFile:
+with open('settings.json', "rb") as SFile:
     passwordData = json.loads(SFile.read().decode('utf-8'))
 
 user = passwordData["UserName"]
